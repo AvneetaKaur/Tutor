@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+   {{>navbar}}
+   <!--CONTACT US START-->
+
+    <div class="container-fluid mt-5 contact-style" id="contactid">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+           <h1 class="text-center main-heading" style="color: #5222d0;">Contact us</h1>
+           <p class="text-center sub-heading" style="font-family :Verdana, Geneva, Tahoma, sans-serif">we will be happy to help you</p>
+
+           <div class="row">
+              <div class="col-md-6 col-12 mx-auto">
+                <form action="/contact" method="POST">
+
+                   <div class="form-group">
+                    <label for="exampleInputPassword1">Name</label>
+                    <input style="color: black; font-size: 21px; font-family:Arial, Helvetica, sans-serif" type="text" class="form-control input1" id="exampleInputPassword1" placeholder="Full Name" name="name">
+                   </div>
+
+                   <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address</label>
+                    <input style="color: black; font-size: 21px; font-family:Arial, Helvetica, sans-serif" type="email" class="form-control input1" id="exampleInputEmail1" placeholder="Enter your Email" name="email">
+                    <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone else.</small>
+                   </div>
+
+                   <div class="form-group">
+                    <label for="exampleInputPassword1">Phone</label>
+                    <input style="color: black; font-size: 21px; font-family:Arial, Helvetica, sans-serif" type="number" class="form-control input1" id="exampleInputPassword1" placeholder="Phone Number" name="phone">
+                   </div>
+
+                   <div class="form-group">
+                    <label for="exampleInputPassword1">Query</label>
+                    <input style="color: black; font-size: 21px; font-family:Arial, Helvetica, sans-serif" type="text" class="form-control input1" id="exampleInputPassword1" placeholder="Query" name="query">
+                   </div>
+                   <br>
+                   <br>
+                   <button style="font-size: 20px; font-family :Verdana, Geneva, Tahoma, sans-serif" class="btn btn-danger" type="submit"><b>SUBMIT</b></button>
+                </form>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+  <!--CONTACT US END-->
+
+  <!--FOOTER SECTION STARTS-->
+
+    <div class="footer-div">
+      <p class="footer-text">@2023, Tutor<br>Created by - Avneeta Kaur</p>
+    </div>
+
+    <!--FOOTER SECTION ENDS-->
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../jq/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

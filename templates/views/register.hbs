@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    
+    <!--REGISTER FORM START-->
+
+    <div class="container-fluid mt-5 contact-style" id="preferenceid">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+           <h1 class="text-center main-heading" style="color: #5222d0;">Register</h1>
+           <p class="text-center sub-heading" style="font-family :Verdana, Geneva, Tahoma, sans-serif">Start learning today!</p>
+
+           <div class="row">
+              <div class="col-md-6 col-12 mx-auto">
+                <form action="/register" method="POST">
+
+                   <div class="form-group">
+                    <label for="exampleInputPassword1">Subject</label>
+                    <input style="color: black; font-size: 21px; font-family:Arial, Helvetica, sans-serif" type="text" class="form-control input1" id="exampleInputPassword1" placeholder="Subject you want a tutor for" name="subject">
+                   </div>
+
+                   <div class="form-group">
+                    <label for="exampleInputEmail1">Class</label>
+                    <input style="color: black; font-size: 21px; font-family:Arial, Helvetica, sans-serif" type="number" class="form-control input1" id="exampleInputEmail1" placeholder="8th/9th/10th" name="class">
+                   </div>
+
+                   <div class="form-group">
+                    <label for="exampleInputPassword1">School</label>
+                    <input style="color: black; font-size: 21px; font-family:Arial, Helvetica, sans-serif" type="text" class="form-control input1" id="exampleInputPassword1" placeholder="Current School Name" name="school">
+                   </div>
+
+                   <div class="form-group">
+                    <label for="exampleInputPassword1">Mobile</label>
+                    <input style="color: black; font-size: 21px; font-family:Arial, Helvetica, sans-serif" type="number" class="form-control input1" id="exampleInputPassword1" placeholder="your contact number" name="mobile">
+                   </div>
+
+                   <br>
+                   <br>
+                   <button style="font-size: 20px; font-family :Verdana, Geneva, Tahoma, sans-serif" class="btn btn-danger" type="submit"><b>SUBMIT</b></button>
+                </form>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+  <!--PREFERENCE FORM END-->
+
+  <!--FOOTER SECTION STARTS-->
+
+    <div class="footer-div">
+      <p class="footer-text">@2023, Tutor<br>Created by - Avneeta Kaur</p>
+    </div>
+
+    <!--FOOTER SECTION ENDS-->
+
+</body>
+</html>
